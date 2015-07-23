@@ -3,16 +3,17 @@
   <head>
   <meta charset="utf-8">
   <!-- =======Mobile Styling Below======== -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- My Custom Mobile Theme -->
-  <link rel="stylesheet" href="themes/mobile-theme.min.css" />
-  <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-  <!-- Include jQuery Mobile stylesheets -->
-  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-  <!-- Include the jQuery library -->
-  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <!-- Include the jQuery Mobile library -->
-  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<!-- Include meta tag to ensure proper rendering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<!-- Include the jQuery library -->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   <!-- =======Mobile Styling Above======== -->
   </head>
   <body>
@@ -23,19 +24,23 @@
       
 
 
+    <div data-role="controlgroup" data-type="vertical">
+      <a href="national.html" class="ui-btn">National Top 50</a>
+      <a href="#" class="ui-btn">Rankings (State)</a>
+      <a href="#" class="ui-btn">My Teams</a>
+      <a href="#" class="ui-btn">Login / Register</a>
+    </div>
+
+
+
+
+
+
+
     <li>
       <input type="submit" value="National Teams">
     </li>
-
-
       <!-- <li><a href="#" class="ui-btn" id="menu-national">National Top 25</a></li> -->
-
-
-
-
-
-
-
       <li><a href="#">Rankings (State)</a></li>
       <li><a href="#">My Teams</a></li>
       <li><a href="#">Login/Register</a></li>
@@ -72,26 +77,29 @@
   </div>
 </div>
 
-<!-- TEAM TEMPLATE -->
+<!-- 100 TEAM TEMPLATE -->
 
 <script type="text/template" id="team-template">
-    <div class="track">
-      <div class="row">
-        <div class="col-xs-4">
-          <img src="<%= albumArt %>" class="img-responsive">
-        </div>
-        <div class="col-xs-8">
+  </script>
+
+        <div class="XXXXX">
           <p>
             <strong><%= name %></strong> by <%= artist %>
           </p>
           <p>
-            <a href="<%= previewUrl %>" target="_blank" class="btn btn-sm btn-default">Preview <span class="glyphicon glyphicon-play"></span></a>
+            <a target="_blank" class="XXXXX">Preview
+              <span class="glyphicon glyphicon-play"></span>
+            </a>
           </p>
         </div>
-      </div>
-      <hr>
-    </div>
-  </script>
+
+
+
+
+        <!-- <div class="">
+          <img src="<%= albumArt %>" class="img-responsive">
+        </div> -->
+
 
       
 

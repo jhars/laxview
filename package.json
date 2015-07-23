@@ -2,7 +2,7 @@
   "name": "laxview",
   "version": "1.0.0",
   "description": "Front-End to LaxRank",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "express": "^4.13.1",
     "mongo-express": "^0.21.0",
