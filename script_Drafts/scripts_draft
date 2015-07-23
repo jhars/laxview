@@ -1,0 +1,30 @@
+$(function() {
+
+  // form to search spotify API
+  var $spotifySearch = $('#spotify-search');
+  var $trackInput = $('#track-input');
+
+  // element to hold results from spotify API
+  var $searchResults = $('#search-results');
+
+  var songTemplate = _.template($('#song-template').html());
+
+  // submit form to search spotify API
+  $spotifySearch.keyup(function(event) {
+    event.preventDefault();
+    $searchResults.empty();
+    var searchTerms = $trackInput.val();
+
+
+
+    //-----------Relative Path----------------//
+    var spotifyAPIurl = 'http://localhost:8081/' + searchTerms;
+    
+//////////////////////////////////////////////////////
+
+    // use AJAX to call spotify API
+    $.get(spotifyAPIurl, function(data) {
+
+      var searchResults= data.tracks.items;
+      console.log(searchResults);
+});

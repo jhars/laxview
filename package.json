@@ -1,0 +1,18 @@
+{
+  "name": "laxview",
+  "version": "1.0.0",
+  "description": "Front-End to LaxRank",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.1",
+    "mongo-express": "^0.21.0",
+    "mongoose": "^4.0.8",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jon Harlan",
+  "license": "ISC"
+}
