@@ -4,6 +4,7 @@
   "description": "Front-End to LaxRank",
   "main": "server.js",
   "dependencies": {
+    "body-parser": "^1.13.2",
     "express": "^4.13.1",
     "mongo-express": "^0.21.0",
     "mongoose": "^4.0.8",
